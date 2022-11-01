@@ -1,9 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\S1.1",
+    "\\S2.3",
     "\\S2.3\\controllers",
-    "\\S2.3\\views"
+    "\\S2.3\\views",
+    "\\S2.4",
+    "\\S2.4\\views"
   ],
-  "SelectedNode": "\\S2.3",
+  "SelectedNode": "\\S2.3\\server.js",
   "PreviewInSolutionExplorer": false
 }

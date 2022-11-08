@@ -18,7 +18,7 @@ app.all('*', function(req, res) {
 
 app.listen(8080, function() {
     console.log(
-        'server is running on dụ http://127.0.0.1:8080/'
+        'server is running on port http://127.0.0.1:8080/'
     );
 });
 

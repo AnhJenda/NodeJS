@@ -4,11 +4,11 @@ const handlebars = require('express-handlebars')
 const app = express()
 const port = process.env.PORT || 3000
 
-app.engine('handlebars', handlebars.engine({
-    "extname" : ".hbs",
-    "defaultLayout" : 'main'
-}))
-app.set('view engine', 'handlebars')
+app.engine('hbs', handlebars.engine({
+    extname: '.hbs',
+    defaultLayout: 'main'
+}));
+app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'public/views'));
 
 app.get('/', (req, res) => res.render('home'))
@@ -20,7 +20,6 @@ app.use((req, res) => {
 })
 // custom 500 page
 app.use((err, req, res, next) => {
- console.error(err.message)
  res.status(500)
  res.render('500')
 })

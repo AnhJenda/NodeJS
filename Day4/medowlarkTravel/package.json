@@ -1,0 +1,19 @@
+{
+  "name": "medowlarktravel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "medowlark.js",
+  "scripts": {
+    "start": "nodemon --inspect medowlark.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anhdinh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "express-handlebars": "^6.0.6",
+    "nodemon": "^2.0.20"
+  }
+}

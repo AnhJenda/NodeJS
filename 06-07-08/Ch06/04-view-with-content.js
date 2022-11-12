@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express();
-app.get('/greeting', (req, res) => {
+
+app.get('/geeting', (req, res) => {
     res.render('greeting', {
     message: 'Hello esteemed programmer!',
     style: req.query.style,
@@ -10,6 +11,6 @@ app.get('/greeting', (req, res) => {
    })
    
 
-   app.listen(3000, () => {
-    console.log('listening on port 3000');
+   app.listen(8080, () => {
+    console.log('listening on port 8080');
 })

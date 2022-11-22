@@ -12,13 +12,6 @@ app.use(bodyParser.json())
 app.engine('hbs', expressHandlerbars.engine({
     extname: '.hbs',
     defaultLayout: 'main',
-    helpers: {
-        section: function(name, options){
-            if(!this._sections) this._sections = {}
-            this._sections[name] = options.fn(this)
-            return null
-        }
-    }
 }))
 app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, 'views'))

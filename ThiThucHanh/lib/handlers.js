@@ -5,10 +5,11 @@ exports.register = (req, res) => {
 }
 
 exports.registerProcess = (req, res) => {
-    console.log('Form (from querystring): ' + req.query.form)
-    console.log('CSRF token (from hidden form field): ' + req.body._csrf)
-    console.log('Name (from visible form field): ' + req.body.name)
-    console.log('Email (from visible form field): ' + req.body.email)
+    console.log('Name: ' + req.body.name)
+    console.log('Email: ' + req.body.email)
+    console.log('Phone: ' + req.body.phone)
+    console.log('Address: ' + req.body.address)
+    console.log('-------------------------------------')
     res.redirect(303, '/register/thank-you')
 }
 

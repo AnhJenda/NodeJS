@@ -1,0 +1,56 @@
+
+div.container {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+div.content {
+    width: 700px;
+    height: 400px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.register-content {
+    width: 800px;
+    height: 400px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.thank-you-content {
+    position: relative;
+    height: 100vh;
+}
+
+div.wrap {
+    position: absolute;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
